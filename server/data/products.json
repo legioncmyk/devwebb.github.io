@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Canva Pro Sharing 1 Bulan",
+    "price": 35000,
+    "stock": 18,
+    "status": "Tersedia",
+    "category": "premium",
+    "description": "Akses premium Canva Pro untuk kebutuhan desain profesional."
+  },
+  {
+    "id": 2,
+    "name": "Netflix Premium 1 Profile",
+    "price": 45000,
+    "stock": 12,
+    "status": "Promo",
+    "category": "premium",
+    "description": "Streaming film dan serial dengan kualitas tinggi."
+  },
+  {
+    "id": 3,
+    "name": "Jasa Pembuatan Landing Page",
+    "price": 250000,
+    "stock": 8,
+    "status": "Open Order",
+    "category": "jasa",
+    "description": "Pembuatan landing page modern dan responsif untuk bisnis Anda."
+  },
+  {
+    "id": 4,
+    "name": "Jasa Desain Feed Instagram",
+    "price": 150000,
+    "stock": 10,
+    "status": "Tersedia",
+    "category": "jasa",
+    "description": "Desain feed profesional dengan branding konsisten."
+  }
+]

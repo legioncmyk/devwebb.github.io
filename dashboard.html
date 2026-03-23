@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZALLSTORE DIGITAL HUB | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+  </head>
+  <body data-page="dashboard">
+    <main class="page-shell">
+      <section class="panel fade-in">
+        <span class="brand-mark">Business Dashboard</span>
+        <h1 class="section-title">Ringkasan Operasional</h1>
+        <p class="section-copy">Dashboard statistik otomatis berdasarkan data produk yang aktif di backend JSON.</p>
+      </section>
+      <section>
+        <div id="dashboardStats" class="dashboard-grid" style="margin-top:24px;"></div>
+      </section>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Produk Terbaru</h2>
+            <p class="section-copy">Preview produk yang dapat langsung dipesan melalui WhatsApp.</p>
+          </div>
+        </div>
+        <div id="latestProducts" class="premium-grid"></div>
+      </section>
+      <div class="footer-space"></div>
+    </main>
+
+    <div id="navbarMount"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
