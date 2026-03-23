@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZALLSTORE DIGITAL HUB | Admin</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+  </head>
+  <body data-page="admin">
+    <main class="page-shell">
+      <section id="loginSection" class="login-card fade-in" style="max-width:520px;margin:0 auto;">
+        <span class="brand-mark">Admin Access</span>
+        <h1 class="section-title">Login Admin</h1>
+        <p class="section-copy">Gunakan akun default: <strong>admin</strong> / <strong>zallstore123</strong>.</p>
+        <div id="loginNotice"></div>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Masukkan username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Masukkan password" required />
+          </div>
+          <button class="primary-btn" type="submit">Masuk ke Dashboard Admin</button>
+        </form>
+      </section>
+
+      <section id="adminSection" class="admin-grid" style="display:none;margin-top:24px;">
+        <div class="admin-card slide-up">
+          <span class="brand-mark">CRUD Produk</span>
+          <h2 id="formTitle" class="section-title">Tambah Produk Baru</h2>
+          <div id="adminNotice"></div>
+          <form id="productForm">
+            <input type="hidden" name="productId" />
+            <div class="form-group">
+              <label for="name">Nama Produk</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="price">Harga</label>
+              <input id="price" name="price" type="number" min="0" required />
+            </div>
+            <div class="form-group">
+              <label for="stock">Stok</label>
+              <input id="stock" name="stock" type="number" min="0" required />
+            </div>
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select id="status" name="status" required>
+                <option value="Tersedia">Tersedia</option>
+                <option value="Promo">Promo</option>
+                <option value="Open Order">Open Order</option>
+                <option value="Habis">Habis</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="category">Kategori</label>
+              <select id="category" name="category" required>
+                <option value="premium">Premium</option>
+                <option value="jasa">Jasa</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="description">Deskripsi</label>
+              <textarea id="description" name="description" placeholder="Tambahkan deskripsi singkat produk"></textarea>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="primary-btn" type="submit">Simpan Produk</button>
+              <button id="cancelEdit" class="secondary-btn" type="button">Reset Form</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="admin-card slide-up">
+          <span class="brand-mark">Daftar Produk</span>
+          <h2 class="section-title">Manajemen Produk</h2>
+          <div style="overflow-x:auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nama</th>
+                  <th>Harga</th>
+                  <th>Stok</th>
+                  <th>Status</th>
+                  <th>Kategori</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="adminTableBody">
+                <tr>
+                  <td colspan="7">Silakan login untuk memuat data produk.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <div class="footer-space"></div>
+    </main>
+
+    <div id="navbarMount"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
